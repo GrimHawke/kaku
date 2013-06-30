@@ -155,7 +155,7 @@ class menu2(object):
         
 class button(object):
     def __init__(self, text, x, y, xlen, ylen, fontsize):
-        self.fontObj = pygame.font.Font('couriernew', fontsize)
+        self.fontObj = pygame.font.Font(None, fontsize)
         self.text = self.fontObj.render(text, True, WHITE)
         self.rect = self.text.get_rect()
         self.rect.center = (x,y)
